@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CGV </title>
+    <meta name="description" content="Conditions Générales de Vente de <span class="nomEntreprise"></span> - Réparateur Téléphone." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" />
+    <link rel="stylesheet" href="./src/output.css">
+    <style>
+        :root {
+            color-scheme: light;
+        }
+
+        body {
+            font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial;
+        }
+    </style>
+    <script>
+
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            yellow: '#fff200',
+                            blue: '#0b74de',
+                            dark: '#111827'
+                        }
+                    },
+                    boxShadow: { card: '0 6px 20px rgba(16,24,40,.06)' }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-white text-gray-700 antialiased">
+    <!-- NAVBAR -->
+    <header class="sticky top-0 z-40 bg-white border-b border-gray-100">
+        <div class="sticky top-0 z-50 bg-brand-yellow">
+
+            <div class="max-w-6xl mx-auto px-6 py-2 flex items-center justify-between  gap-6 text-sm font-semibold">
+
+                <div class="hidden sm:flex items-center gap-2"><span>📍</span><span class="adress"></span></div>
+                <div class="hidden sm:flex items-center gap-2"><span><svg class="w-7 h-7 text-gray-700"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-label="Horaires" role="img">
+                            <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2" />
+                            <path d="M12 7v5l3 2" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></span>
+                    <span>7J/7 et 24H/24</span>
+                </div>
+                <div class="flex items-center gap-2"><span class="numero"></span></div>
+                <a href="#contact"
+                    class="inline-flex items-center rounded-full bg-gray-900 text-white px-4 py-2">Contactez-nous</a>
+            </div>
+        </div>
+        <!-- Header  -->
+
+        <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between gap-4">
+             <a href="../index.html">
+                    <div class="flex items-center gap-3 font-bold">
+                        <div class="w-11 h-11 grid place-items-center rounded-lg bg-gray-900 text-white">SF</div>
+                        <div>
+                            <div class="tracking-wide font-extrabold"><span class="nomEntreprise"></span></div>
+                            <div class="text-xs text-gray-500">Réparation Iphone</div>
+                        </div>
+                    </div>
+                    <nav class="hidden md:block">
+                        <ul class="flex gap-6 text-xs font-extrabold tracking-wide">
+                            <li><a class="hover:text-brand-blue" href="../index.html">ACCUEIL</a></li>
+                            <li><a class="hover:text-brand-blue" href="../index.html#services">RÉPARATION </a></li>
+                            <li><a class="hover:text-brand-blue" href="../index.html#contact">CONTACT</a></li>
+                            <li><a class="hover:text-brand-blue" href="">CGV</a></li>
+                        </ul>
+                    </nav>
+                    <a href="#contact"
+                        class="hidden sm:inline-flex items-center rounded-lg bg-white border border-gray-200 px-4 py-2 font-semibold text-brand-blue">Demande
+                        de devis</a>
+        </div>
+        </a>
+    </header>
+
+    <main class="mx-auto max-w-5xl px-6">
+        <!-- PAGE TITLE -->
+        <section class="py-10">
+            <h1 class="text-[15px] font-semibold tracking-wide text-gray-500">1. CONDITIONS GÉNÉRALES DE VENTE</h1>
+        </section>
+
+
+        <section class="space-y-5 pb-4">
+            <h2 class="text-xs font-semibold uppercase tracking-wide text-gray-400">PRÉAMBULE</h2>
+            <p class="leading-7 text-gray-500">La société <span class="nomEntreprise"></span>,société par
+                actions simplifiée, au capital de 2000 euros, immatriculée au RCS de Versailles sous le n° 900 608 563 ,
+                dont le siège social est situé aux <span class="adress"></span>, exploite un site
+                internet de commerce électronique proposant la réparation d’appareils électroniques (smartphones,
+                tablettes, consoles, ordinateurs) à domicile, accessible à l’adresse www.<span class="nomEntreprise"></span>.fr (ci-après dénommé «
+                le Site »), à destination de clients particuliers et professionnels situés en France métropolitaine
+                (ci-après dénommé « Le Client »). En acceptant les présentes conditions générales, le client garantit
+                être propriétaire de l’appareil apporté en réparation. Le client garantit par ailleurs être une personne
+                physique majeure, âgée de plus de dix-huit (18) ans, ou un représentant légal, et disposer de la pleine
+                capacité juridique pour signer le présent contrat. Le client reconnaît et accepte que l’appareil qu’il
+                apporte en réparation est peut-être encore sous garantie fabricant ou vendeur et pourrait être réparé
+                gratuitement par ces derniers, alors que la réparation effectuée par <span class="nomEntreprise"></span> est payante. Le client
+                reconnaît et accepte que l’intervention de <span class="nomEntreprise"></span> sur son appareil entraînera une rupture de garantie
+                du fabricant et/ou du vendeur de l’appareil car <span class="nomEntreprise"></span> ne saurait en assumer la responsabilité. Le
+                client accepte de recevoir toutes informations concernant le service, la facture et plus généralement
+                l’exécution des présentes conditions générales par courrier électronique. Le client reconnaît que la
+                prise de rendez-vous sur internet ou par téléphone implique la connaissance du contrat et accepte sans
+                réserve les présentes conditions générales.
+
+                Si le client souhaite accéder au contrat signé électroniquement par ses soins, il pourra en effectuer la
+                demande à l’adresse e-mail suivante : contact@<span class="nomEntreprise"></span>.shop.
+
+                Le présent contrat est proposé en langue française.
+
+            </p>
+        </section>
+
+
+        <section class="space-y-10 py-6">
+            <article class="space-y-3">
+                <h3 class="text-sm font-semibold tracking-wide text-gray-500">ARTICLE 1 : Objet</h3>
+                <p class="leading-7">Les présentes conditions générales ont pour but de définir les conditions et
+                    modalités de l’appareil faisant l’objet d’une réparation.</p>
+            </article>
+
+            <article class="space-y-3">
+                <h3 class="text-sm font-semibold tracking-wide text-gray-500">ARTICLE 2 : Entrée en vigueur / Durée</h3>
+                <p class="leading-7">Les présentes conditions générales entrent en vigueur dès que le client aura apposé
+                    sa signature sur le contrat qui lui est présenté lors d’une intervention, et restent en vigueur
+                    jusqu’à extinction des droits et obligations à la charge de l’une ou l’autre des parties.</p>
+            </article>
+
+            <article class="space-y-3">
+                <h3 class="text-sm font-semibold tracking-wide text-gray-500">ARTICLE 3 : Propriété de l’appareil</h3>
+                <p class="leading-7">Le client garantit être propriétaire de l’appareil apporté en réparation (ci-après
+                    dénommé « l’appareil »). Le client garantit par ailleurs avoir acquis l’appareil de façon régulière,
+                    et notamment que l’appareil ne soit pas un objet volé ou acquis frauduleusement..
+                </p>
+            </article>
+
+            <article class="space-y-3">
+                <h3 class="text-sm font-semibold tracking-wide text-gray-500">ARTICLE 4 : Commande de la prestation de
+                    réparation</h3>
+
+            </article>
+
+            <article class="space-y-3">
+                <h3 class="text-sm font-semibold tracking-wide text-gray-500">ARTICLE 5 : Délais et exécution</h3>
+                <p class="leading-7">
+
+                    Le client demande une prestation via les réseaux sociaux, le site (via le formulaire de contact) ou
+                    par téléphone.
+
+                    Si le point de rendez-vous fait partie de la zone d’intervention, <span class="nomEntreprise"></span> prend contact avec le
+                    client pour fixer un rendez-vous. Si le point de rendez-vous ne fait pas partie de la zone
+                    d’intervention, <span class="nomEntreprise"></span> est en droit d’appliquer des frais supplémentaires dépendamment de la
+                    distance.</p>
+            </article>
+
+            <article class="space-y-3">
+                <h3 class="text-sm font-semibold tracking-wide text-gray-500">ARTICLE 6 : Données et sauvegarde</h3>
+                <p class="leading-7">Le Client est responsable de la sauvegarde de ses données avant intervention.
+                    <span class="nomEntreprise"></span> n’est pas responsable des pertes de données sauf faute prouvée.</p>
+            </article>
+
+            <article class="space-y-3">
+                <h3 class="text-sm font-semibold tracking-wide text-gray-500">ARTICLE 7 : Garanties et responsabilité
+                </h3>
+                <ul class="list-disc pl-6 leading-7">
+                    <li>Obligation de moyens.</li>
+                    <li>Garantie pièces et main‑d’œuvre sur intervention pendant 12 mois hors chocs, oxydation, usage
+                        anormal.</li>
+                    <li>Responsabilité limitée aux dommages directs et au montant payé pour la prestation.</li>
+                </ul>
+            </article>
+
+            <article class="space-y-3">
+                <h3 class="text-sm font-semibold tracking-wide text-gray-500">ARTICLE 8 : Droit de rétractation</h3>
+                <p class="leading-7">Pour les consommateurs, 14 jours pour se rétracter pour les contrats à distance. Si
+                    exécution anticipée sur demande expresse, les prestations réalisées restent dues au prorata.
+                    Exceptions : art. L221‑28 C. conso.</p>
+            </article>
+
+            <article class="space-y-3">
+                <h3 class="text-sm font-semibold tracking-wide text-gray-500">ARTICLE 9 : Données personnelles (RGPD)
+                </h3>
+                <p class="leading-7">Traitement des données pour la gestion des interventions. Droits d’accès,
+                    rectification, opposition et portabilité à gestion@<span class="nomEntreprise"></span>.shop Réclamation : CNIL.</p>
+            </article>
+
+            <article class="space-y-3">
+                <h3 class="text-sm font-semibold tracking-wide text-gray-500">ARTICLE 10 : Médiation et litiges</h3>
+                <p class="leading-7">Réclamation préalable par écrit. Médiateur de la consommation : contact@<span class="nomEntreprise"></span>.fr
+                    Droit français. Tribunaux compétents selon droit commun.</p>
+            </article>
+
+
+        </section>
+
+        <div class="my-12 h-px bg-gray-200"></div>
+    </main>
+
+    <footer class="py-10 text-center text-sm text-gray-500">
+        © <span id="y"></span> <span class="nomEntreprise"></span> · <a href="mailto:contact@<span class="nomEntreprise"></span>.shop"
+            class="text-red-600 hover:underline">contact@<span class="nomEntreprise"></span>.shop</a>
+    </footer>
+
+
+    <script src="../script.js"> </script>
+    <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+
+</html>
